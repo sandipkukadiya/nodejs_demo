@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "f9053677-ba20-4f85-afeb-e6ef9a96a7b9",
+		"name": "NodeJs-practical",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/users/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"RAM001\",\r\n    \"email\":\"ram001@gmail.com\",\r\n    \"mobile\":\"8866712540\",\r\n    \"password\":\"12345&\",\r\n    \"address\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ram001@gmail.com\",\r\n    \"password\":\"12345&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/users/me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhbTAwMUBnbWFpbC5jb20iLCJfaWQiOiI2MTNkYTBlNWM2MjRmMDI4ZTI0ZDQ4MDUiLCJ0aW1lIjoxNjMxNDM3NjY3MjE5LCJqdGkiOiJTaWMzZ015YmsyIiwiaWF0IjoxNjMxNDM3NjY3fQ.ck3YKoiekDBLDfrfqoM3Z6Z_Szulr9oB3mk5hijYnqk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/users/me",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/users/logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhbTAwMUBnbWFpbC5jb20iLCJfaWQiOiI2MTNkYTBlNWM2MjRmMDI4ZTI0ZDQ4MDUiLCJ0aW1lIjoxNjMxNDM4NzMyNDk3LCJqdGkiOiJVS0NETGs5OVNDIiwiaWF0IjoxNjMxNDM4NzMyfQ.BAnrizJ-osW7ABU5My-uSfgmHScsvvTM68gnjcuA7Pcd",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/users/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/randon-joke",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhbTAwMUBnbWFpbC5jb20iLCJfaWQiOiI2MTNkYTBlNWM2MjRmMDI4ZTI0ZDQ4MDUiLCJ0aW1lIjoxNjMxNDM3NjY3MjE5LCJqdGkiOiJTaWMzZ015YmsyIiwiaWF0IjoxNjMxNDM3NjY3fQ.ck3YKoiekDBLDfrfqoM3Z6Z_Szulr9oB3mk5hijYnqk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/randon-joke",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"randon-joke"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
